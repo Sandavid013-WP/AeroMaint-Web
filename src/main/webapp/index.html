@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroMaint - Registro de Aeronave</title>
+</head>
+<body>
+
+    <h1>AeroMaint</h1>
+    <h2>Registro de Aeronave</h2>
+
+    <form action="aeronaves" method="post">
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" maxlength="10" required>
+        <br><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" maxlength="50" required>
+        <br><br>
+
+        <label for="fabricante">Fabricante:</label>
+        <input type="text" id="fabricante" name="fabricante" maxlength="50" required>
+        <br><br>
+
+        <label for="numeroSerie">Número de serie:</label>
+        <input type="text" id="numeroSerie" name="numeroSerie" maxlength="50" required>
+        <br><br>
+
+        <label for="ciclos">Ciclos:</label>
+        <input type="number" id="ciclos" name="ciclos" min="0" required>
+        <br><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Seleccione...</option>
+            <option value="Operativa">Operativa</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+            <option value="Fuera de servicio">Fuera de servicio</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Registrar aeronave</button>
+
+    </form>
+
+</body>
+</html>
